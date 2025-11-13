@@ -4,18 +4,18 @@ def get_num_words(contents):
 
 def get_num_characters(contents):
     char_no_duplicate = contents.lower()
-    onestringbook = char_no_duplicate.join()
+    ## Trying without `.join()` method
+    #onestringbook = char_no_duplicate.join()
 
     oneC_Dict = {}
 
-    for oneC in onestringbook:
-        if oneC == oneC:
-            oneC_Dict[oneC] += 1
+    for character in char_no_duplicate:
+        if character == oneC_Dict[character]:
+            oneC_Dict[character] += 1
             return oneC_Dict
         else:
-            oneC_Dict[oneC] = 1
+            oneC_Dict[character] = 1
+
     
-    oneC_Dict = {oneC: count_oneC}
     
     return oneC_Dict
-        
