@@ -17,7 +17,7 @@ def main():
     num_words = get_num_words(file_contents)
     print(f"Found {num_words} total words")
 
-    get_num_characters(file_contents)
-    print(oneC_Dict)
+    total_character = get_num_characters(file_contents)
+    print(total_character)
 
 main()
