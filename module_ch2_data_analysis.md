@@ -1,6 +1,6 @@
 # Refactoring
 
-[Lecuter][https://www.boot.dev/lessons/bea7b054-305c-4d25-9464-97b6c5606e31]
+- [Link](https://www.boot.dev/lessons/bea7b054-305c-4d25-9464-97b6c5606e31) to the ecture for the refactoring module
 
 Refactoring is a fancy word for "rewriting your god-awful cod so it's not so terrible." Refactoring doesn't change the behavior of your code, just the way *it's written*.
 
@@ -11,8 +11,8 @@ Let's refactor our project to use multiple Python files. Not only will it be use
 
 ## Assignment
 
-- [] Move my function that counts the words into a new `stats.py` file.
-- [] Import the function in my `main.py` file, it will look something like this:
+- [ ] Move my function that counts the words into a new `stats.py` file.
+- [ ] Import the function in my `main.py` file, it will look something like this:
 
 ```
 from stats import get_num_words
