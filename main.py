@@ -1,4 +1,5 @@
 from stats import get_num_words
+from stats import get_num_characters
 
 def get_book_text(file_path):
     with open(file_path) as f:
@@ -15,5 +16,8 @@ def main():
     # print(file_contents)
     num_words = get_num_words(file_contents)
     print(f"Found {num_words} total words")
+
+    get_num_characters(file_contents)
+    print(oneC_Dict)
 
 main()
