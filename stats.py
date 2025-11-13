@@ -9,12 +9,11 @@ def get_num_characters(contents):
     oneC_Dict = {}
 
     for oneC in onestringbook:
-        count_oneC = 0
         if oneC == oneC:
-            count_oneC =+ 1
-            return count_oneC
+            oneC_Dict[oneC] += 1
+            return oneC_Dict
         else:
-            return count_oneC
+            oneC_Dict[oneC] = 1
     
     oneC_Dict = {oneC: count_oneC}
     
