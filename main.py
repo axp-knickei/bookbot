@@ -12,6 +12,6 @@ def main():
     file_contents = get_book_text(file_path)
     # print(file_contents)
     num_words = number_of_words(contents)
-    print(found f"{num_words}" total words)
+    print("found f{num_words} total words")
 
 main()
