@@ -24,10 +24,10 @@ def sorted_dictionary(total_character):
     
     two_key_values = {} # create an empty dictonary for storing two key values
 
-    for char_to_name in total_character: # iterate through one key values dictionary
-        two_key_values["char"] = char_to_name
-        two_key_values["num"] = total_character[char_to_name]
-    return two_key_values   
+    for char in total_character:
+        if char not in two_key_values:
+            two_key_values = {"char": char, "num": total_character[char]}
+    return two_key_values
 
 
 #    .sort()
