@@ -22,12 +22,15 @@ def get_num_characters(contents):
 
 def sorted_dictionary(total_character):
     
-    two_key_values = ()
+    items = []
 
-    for char_y in total_character:
-        name_assignment = {"char": char_y}
-        number_assignment = {"num": total_character[char_y]}
-        two_key_values = name_assignment, number_assignment
+    for ch, ch_count in total_character.items():
+        two_key_values.append({"char": ch, "num": ch_count})
+    
+    def sort_on(two_key_values):
+        return item["num"]
+    
+    items.sort(reverse = True, key = sort_on)
 
     return two_key_values
 
