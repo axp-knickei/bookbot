@@ -22,11 +22,13 @@ def get_num_characters(contents):
 
 def sorted_dictionary(total_character):
     
-    two_key_values = {} # create an empty dictonary for storing two key values
+    two_key_values = ()
 
-    for char in total_character:
-        if char not in two_key_values:
-            two_key_values = {"char": char, "num": total_character[char]}
+    for char_y in total_character:
+        name_assignment = {"char": char_y}
+        number_assignment = {"num": total_character[char_y]}
+        two_key_values = name_assignment, number_assignment
+
     return two_key_values
 
 
