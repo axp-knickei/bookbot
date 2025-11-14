@@ -1,5 +1,6 @@
 from stats import get_num_words
 from stats import get_num_characters
+from stats import sorted_dictionary
 
 def get_book_text(file_path):
     with open(file_path) as f:
@@ -20,6 +21,7 @@ def main():
     total_character = get_num_characters(file_contents)
     print(total_character)
 
-    two_key = print(two_key_values)
+    two_key = sorted_dictionary(total_character) # there is an error here
+    print(two_key)
 
 main()
