@@ -20,4 +20,6 @@ def main():
     total_character = get_num_characters(file_contents)
     print(total_character)
 
+    two_key = print(two_key_values)
+
 main()

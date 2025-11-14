@@ -16,8 +16,19 @@ def get_num_characters(contents):
             #return oneC_Dict # return inside the loop causing problem. So it only runs for the first iteration.
         else:
             oneC_Dict[character] = 1
-            #return oneC_Dict
-
-    
-    
+            #return oneC_Dict  
     return oneC_Dict
+
+
+def sorted_dictionary():
+    
+    two_key_values = {}
+
+    for char_to_name in oneC_Dict:
+        two_key_values["char"] = char_to_name
+        two_key_values["num"] = oneC_Dict[char_to_name]
+    return two_key_values
+
+
+#    .sort()
+
