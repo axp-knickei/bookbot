@@ -7,21 +7,17 @@ def get_book_text(file_path):
         contents = f.read()
     return contents
 
-#def number_of_words(contents):
-#    words = contents.split()
-#    return len(words)
-
 def main():
     file_path = "./books/frankenstein.txt"
     file_contents = get_book_text(file_path)
-    # print(file_contents)
+    
     num_words = get_num_words(file_contents)
     print(f"Found {num_words} total words")
 
     total_character = get_num_characters(file_contents)
     print(total_character)
 
-    two_key = sorted_dictionary(total_character) # there is an error here
+    two_key = sorted_dictionary(total_character) 
     print(two_key)
 
 main()
