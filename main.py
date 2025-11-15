@@ -12,12 +12,21 @@ def main():
     file_contents = get_book_text(file_path)
     
     num_words = get_num_words(file_contents)
+    print("============= BOOKBOT ==============")
+    print(f"Analyzing book found at {file_path}...")
+    print("============= Word Count =============")
     print(f"Found {num_words} total words")
 
     total_character = get_num_characters(file_contents)
-    print(total_character)
+    # print(total_character)
 
     two_key = sorted_dictionary(total_character) 
-    print(two_key)
+    
+    print("--------- Character Count ---------")
+    for item in two_key:
+        if item["char"].isalpha() == True:
+            print(f"{item['char']}: {item['num']}")
+
+    print("============= END ===============")
 
 main()
